@@ -4,7 +4,12 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
+ * Sede
  *
+ * Clase que estructura a la sede
+ *
+ * @since 2019
+ * @version 1.0
  * @author Josze
  */
 public class Sede {
@@ -54,4 +59,12 @@ public class Sede {
     public void addCarrera(Carrera carrera) {
         carreras.add(carrera);
     }
+
+    @Override
+    public String toString() {
+        return "Sede{" + "codigo=" + codigo + ", nombre=" + nombre
+                + ", direccion=" + direccion + ", telefono=" + telefono
+                + ", carreras=" + carreras + '}';
+    }
+
 }

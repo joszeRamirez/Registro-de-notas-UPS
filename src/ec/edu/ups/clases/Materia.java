@@ -1,7 +1,12 @@
 package ec.edu.ups.clases;
 
 /**
+ * Materia
  *
+ * Clase que estructura a la materia
+ *
+ * @since 2019
+ * @version 1.0
  * @author Josze
  */
 public class Materia {
@@ -71,6 +76,14 @@ public class Materia {
 
     public void setProfesor(Profesor profesor) {
         this.profesor = profesor;
+    }
+
+    @Override
+    public String toString() {
+        return "Materia{" + "codigo=" + codigo + ", nombre=" + nombre
+                + ", numeroCreditos=" + numeroCreditos + ", numeroHoras="
+                + numeroHoras + ", nivel=" + nivel + ", grupo=" + grupo
+                + ", profesor=" + profesor + '}';
     }
 
 }

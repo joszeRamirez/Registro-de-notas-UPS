@@ -1,22 +1,42 @@
 package ec.edu.ups.clases;
 
 /**
+ * Persona
  *
+ * Clase que construye a la persona
+ *
+ * @since 2019
+ * @version 1.0
  * @author Josze
  */
 public class Persona {
 
+    /*int privado del objeto codigo*/
     private int codigo;
+    /*String privado del objeto nombre*/
     private String nombre;
+    /*String privado del objeto cedula*/
     private String cedula;
+    /*String privado del objeto telefono*/
     private String telefono;
+    /*String privado del objeto direccion*/
     private String direccion;
+    /*String privado del objeto correo*/
     private String correo;
+    /*Sede privado del objeto sede*/
     private Sede sede;
 
+    /**
+     * Constructor
+     */
     public Persona() {
     }
 
+    /**
+     * Método que devuelve el codigo de la persona
+     *
+     * @return (int) codigo
+     */
     public int getCodigo() {
         return codigo;
     }
@@ -71,6 +91,14 @@ public class Persona {
 
     public void setSede(Sede sede) {
         this.sede = sede;
+    }
+
+    @Override
+    public String toString() {
+        return "Persona{" + "codigo=" + codigo + ", nombre=" + nombre
+                + ", cedula=" + cedula + ", telefono=" + telefono
+                + ", direccion=" + direccion + ", correo=" + correo
+                + ", sede=" + sede + '}';
     }
 
 }

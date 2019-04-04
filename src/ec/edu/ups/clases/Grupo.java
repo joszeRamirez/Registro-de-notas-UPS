@@ -1,7 +1,12 @@
 package ec.edu.ups.clases;
 
 /**
+ * Grupo
  *
+ * Clase que estructura al grupo
+ *
+ * @since 2019
+ * @version 1.0
  * @author Josze
  */
 public class Grupo {
@@ -35,6 +40,12 @@ public class Grupo {
 
     public void setCupo(int cupo) {
         this.cupo = cupo;
+    }
+
+    @Override
+    public String toString() {
+        return "Grupo{" + "codigo=" + codigo + ", nombre=" + nombre
+                + ", cupo=" + cupo + '}';
     }
 
 }

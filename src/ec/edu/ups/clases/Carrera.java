@@ -4,7 +4,12 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
+ * Carrera
  *
+ * Clase que estructura a la carrera
+ *
+ * @since 2019
+ * @version 1.0
  * @author Josze
  */
 public class Carrera {
@@ -63,4 +68,13 @@ public class Carrera {
     public void addMateria(Materia materia) {
         materias.add(materia);
     }
+
+    @Override
+    public String toString() {
+        return "Carrera{" + "codigo=" + codigo + ", nombre=" + nombre
+                + ", numSemestres=" + numSemestres + ", numeroEstudiantes="
+                + numeroEstudiantes + ", titulo=" + titulo + ", materias="
+                + materias + '}';
+    }
+
 }

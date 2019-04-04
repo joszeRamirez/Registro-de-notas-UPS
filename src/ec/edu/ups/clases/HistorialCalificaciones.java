@@ -1,7 +1,12 @@
 package ec.edu.ups.clases;
 
 /**
+ * HistorialCalificaciones
  *
+ * Clase que estructura al historial de calificaciones
+ *
+ * @since 2019
+ * @version 1.0
  * @author Josze
  */
 public class HistorialCalificaciones {
@@ -53,6 +58,13 @@ public class HistorialCalificaciones {
 
     public void setEstudiante(Estudiante estudiante) {
         this.estudiante = estudiante;
+    }
+
+    @Override
+    public String toString() {
+        return "HistorialCalificaciones{" + "aprovecha1=" + aprovecha1
+                + ", examen1=" + examen1 + ", aprovecha2=" + aprovecha2
+                + ", examen2=" + examen2 + ", estudiante=" + estudiante + '}';
     }
 
 }
