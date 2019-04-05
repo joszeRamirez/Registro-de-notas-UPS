@@ -29,10 +29,9 @@ public class Estudiante extends Persona {
         super(codigo, telefono, telefono);
     }
 
-    public Estudiante(Carrera carrera, int codigo, String nombre, String cedula,
-            String telefono, String direccion, String correo, Sede sede) {
-        super(codigo, nombre, cedula, telefono, direccion, correo, sede);
-        this.carrera = carrera;
+    public Estudiante(int codigo, String nombre, String cedula,
+            String telefono, String direccion, String correo) {
+        super(codigo, nombre, cedula, telefono, direccion, correo);
     }
 
     /**
@@ -55,7 +54,8 @@ public class Estudiante extends Persona {
 
     @Override
     public String toString() {
-        return super.toString() + "\nEstudiante{" + "carrera=" + carrera;
+        return "Estudiante{" + super.toString() + "\n" + "\tcarrera="
+                + carrera;
     }
 
 }

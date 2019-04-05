@@ -43,14 +43,13 @@ public class Persona {
     }
 
     public Persona(int codigo, String nombre, String cedula, String telefono,
-            String direccion, String correo, Sede sede) {
+            String direccion, String correo) {
         this.codigo = codigo;
         this.nombre = nombre;
         this.cedula = cedula;
         this.telefono = telefono;
         this.direccion = direccion;
         this.correo = correo;
-        this.sede = sede;
     }
 
     /**
@@ -166,10 +165,10 @@ public class Persona {
 
     @Override
     public String toString() {
-        return "Persona{" + "codigo=" + codigo + "\nnombre=" + nombre
-                + "\ncedula=" + cedula + "\ntelefono=" + telefono
-                + "\ndireccion=" + direccion + "\ncorreo=" + correo
-                + "\nsede=" + sede;
+        return "\n" + "\tcodigo=" + codigo + "\n" + "\tnombre=" + nombre
+                + "\n" + "\tcedula=" + cedula + "\n" + "\ttelefono=" + telefono
+                + "\n" + "\tdireccion=" + direccion + "\n" + "\tcorreo="
+                + correo + "\n" + "\tsede=" + sede;
     }
 
 }

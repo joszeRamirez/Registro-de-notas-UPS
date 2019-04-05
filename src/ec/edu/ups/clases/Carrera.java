@@ -22,6 +22,16 @@ public class Carrera {
     private List<Materia> materias;
 
     public Carrera() {
+        
+    }
+
+    public Carrera(int codigo, String nombre, int numSemestres,
+            int numeroEstudiantes, String titulo) {
+        this.codigo = codigo;
+        this.nombre = nombre;
+        this.numSemestres = numSemestres;
+        this.numeroEstudiantes = numeroEstudiantes;
+        this.titulo = titulo;
         materias = new ArrayList<>();
     }
 

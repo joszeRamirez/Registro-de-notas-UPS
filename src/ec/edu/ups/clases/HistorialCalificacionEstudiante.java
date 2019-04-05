@@ -9,15 +9,24 @@ package ec.edu.ups.clases;
  * @version 1.0
  * @author Josze
  */
-public class HistorialCalificaciones {
+public class HistorialCalificacionEstudiante {
 
     private int aprovecha1;
     private int examen1;
     private int aprovecha2;
     private int examen2;
-    private Estudiante estudiante;
+    private Materia materia;
 
-    public HistorialCalificaciones() {
+    public HistorialCalificacionEstudiante() {
+    }
+
+    public HistorialCalificacionEstudiante(int aprovecha1, int examen1,
+            int aprovecha2, int examen2, Materia materia) {
+        this.aprovecha1 = aprovecha1;
+        this.examen1 = examen1;
+        this.aprovecha2 = aprovecha2;
+        this.examen2 = examen2;
+        this.materia = materia;
     }
 
     public int getAprovecha1() {
@@ -52,19 +61,19 @@ public class HistorialCalificaciones {
         this.examen2 = examen2;
     }
 
-    public Estudiante getEstudiante() {
-        return estudiante;
+    public Materia getMateria() {
+        return materia;
     }
 
-    public void setEstudiante(Estudiante estudiante) {
-        this.estudiante = estudiante;
+    public void setMateria(Materia materia) {
+        this.materia = materia;
     }
 
     @Override
     public String toString() {
-        return "HistorialCalificaciones{" + "aprovecha1=" + aprovecha1
+        return "HistorialCalificacionEstudiante{" + "aprovecha1=" + aprovecha1
                 + ", examen1=" + examen1 + ", aprovecha2=" + aprovecha2
-                + ", examen2=" + examen2 + ", estudiante=" + estudiante + '}';
+                + ", examen2=" + examen2 + ", materia=" + materia + '}';
     }
 
 }

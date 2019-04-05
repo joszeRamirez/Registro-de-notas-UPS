@@ -21,8 +21,8 @@ public class Profesor extends Persona {
 
     public Profesor(String titulo, double salario, String cargo, int codigo,
             String nombre, String cedula, String telefono, String direccion,
-            String correo, Sede sede) {
-        super(codigo, nombre, cedula, telefono, direccion, correo, sede);
+            String correo) {
+        super(codigo, nombre, cedula, telefono, direccion, correo);
         this.titulo = titulo;
         this.salario = salario;
         this.cargo = cargo;
@@ -40,6 +40,14 @@ public class Profesor extends Persona {
         return salario;
     }
 
+    public double getSalario(int horasTrabajadas, double valorPorHora) {
+        return salario + (horasTrabajadas + valorPorHora);
+    }
+
+    public double getSalario(double comision) {
+        return salario + comision;
+    }
+
     public void setSalario(double salario) {
         this.salario = salario;
     }
@@ -54,7 +62,7 @@ public class Profesor extends Persona {
 
     @Override
     public String toString() {
-        return super.toString() + "Profesor{" + "titulo=" + titulo
+        return "Profesor{" + super.toString() + "titulo=" + titulo
                 + ", salario=" + salario + ", cargo=" + cargo + '}';
     }
 
