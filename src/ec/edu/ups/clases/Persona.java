@@ -32,6 +32,27 @@ public class Persona {
     public Persona() {
     }
 
+    public Persona(int codigo) {
+        this.codigo = codigo;
+    }
+
+    public Persona(int codigo, String nombre, String cedula) {
+        this.codigo = codigo;
+        this.nombre = nombre;
+        this.cedula = cedula;
+    }
+
+    public Persona(int codigo, String nombre, String cedula, String telefono,
+            String direccion, String correo, Sede sede) {
+        this.codigo = codigo;
+        this.nombre = nombre;
+        this.cedula = cedula;
+        this.telefono = telefono;
+        this.direccion = direccion;
+        this.correo = correo;
+        this.sede = sede;
+    }
+
     /**
      * Método que devuelve el codigo de la persona
      *
@@ -145,10 +166,10 @@ public class Persona {
 
     @Override
     public String toString() {
-        return "Persona{" + "codigo=" + codigo + ", nombre=" + nombre
-                + ", cedula=" + cedula + ", telefono=" + telefono
-                + ", direccion=" + direccion + ", correo=" + correo
-                + ", sede=" + sede + '}';
+        return "Persona{" + "codigo=" + codigo + "\nnombre=" + nombre
+                + "\ncedula=" + cedula + "\ntelefono=" + telefono
+                + "\ndireccion=" + direccion + "\ncorreo=" + correo
+                + "\nsede=" + sede;
     }
 
 }
