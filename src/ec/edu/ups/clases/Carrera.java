@@ -81,10 +81,10 @@ public class Carrera {
 
     @Override
     public String toString() {
-        return "Carrera{" + "codigo=" + codigo + ", nombre=" + nombre
-                + ", numSemestres=" + numSemestres + ", numeroEstudiantes="
-                + numeroEstudiantes + ", titulo=" + titulo + ", materias="
-                + materias + '}';
+        return "Carrera{" + "codigo=" + codigo + "\n" + "\t\tnombre=" + nombre
+                + "\n" + "\t\tnumSemestres=" + numSemestres + "\n"
+                + "\t\tnumeroEstudiantes=" + numeroEstudiantes + "\n"
+                + "\t\ttitulo=" + titulo;
     }
 
 }

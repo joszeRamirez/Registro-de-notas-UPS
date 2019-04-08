@@ -50,8 +50,8 @@ public class Grupo {
 
     @Override
     public String toString() {
-        return "Grupo{" + "codigo=" + codigo + ", nombre=" + nombre
-                + ", cupo=" + cupo + '}';
+        return "\tGrupo{" + "codigo=" + codigo + "\n" + "\t\tnombre=" + nombre
+                + "\n" + "\t\tcupo=" + cupo;
     }
 
 }

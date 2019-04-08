@@ -89,10 +89,10 @@ public class Materia {
 
     @Override
     public String toString() {
-        return "Materia{" + "codigo=" + codigo + ", nombre=" + nombre
-                + ", numeroCreditos=" + numeroCreditos + ", numeroHoras="
-                + numeroHoras + ", nivel=" + nivel + ", grupo=" + grupo
-                + ", profesor=" + profesor + '}';
+        return "Materia{" + "codigo=" + codigo + "\n" + "\t\tnombre=" + nombre
+                + "\n" + "\t\tnumeroCreditos=" + numeroCreditos + "\n" + "\t\tnumeroHoras="
+                + numeroHoras + "\n" + "\t\tnivel=" + nivel + "\n" + "\t\tgrupo=" + grupo
+                + "\n" + "profesor=" + profesor;
     }
 
 }
