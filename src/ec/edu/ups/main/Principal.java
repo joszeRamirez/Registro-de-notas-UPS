@@ -14,6 +14,7 @@ import ec.edu.ups.clases.*;
 public class Principal {
 
     public static void main(String[] args) {
+        //Instanciaciones
         Sede sedeCuenca = new Sede(123, "Sede Cuenca", "Detras del parque",
                 "2983418");
         Carrera compu = new Carrera(1, "Computacion", 10, 200,
@@ -22,9 +23,6 @@ public class Principal {
                 "Ingeniero en Ciencias de la Telemática");
         Carrera mecatro = new Carrera(3, "Mecatrónica", 10, 250,
                 "Ingeniero Mecatrónico");
-        sedeCuenca.addCarrera(compu);
-        sedeCuenca.addCarrera(telemat);
-        sedeCuenca.addCarrera(mecatro);
 
         Materia calculoDife = new Materia(20, "Calculo Diferencial", 3, 140, 2);
         Materia etica = new Materia(15, "Ética", 3, 80, 3);
@@ -32,13 +30,6 @@ public class Principal {
         Materia calc1Var = new Materia(5, "Cálculo de una variable", 3, 150, 1);
         Materia logic = new Materia(78, "Lógica", 3, 75, 1);
         Materia comunica = new Materia(99, "Comunicación", 3, 50, 1);
-
-        compu.addMateria(calculoDife);
-        compu.addMateria(algebraLin);
-        telemat.addMateria(etica);
-        telemat.addMateria(comunica);
-        mecatro.addMateria(calc1Var);
-        mecatro.addMateria(logic);
 
         Profesor gaLeo = new Profesor("Ingeniero en computación", 950, "Profesor", 12, "Gabriel León", "0705462151", "0982465125", "Desconocido", "gl@hotmail.com");
         gaLeo.setSede(sedeCuenca);
@@ -54,18 +45,8 @@ public class Principal {
         Estudiante juBa = new Estudiante(19978, "Juan Barrera", "0705432879", "0954565852", "Victoria Secret", "jbarrerab@est.ups.edu.ec");
         juBa.setSede(sedeCuenca);
 
-        joRa.setCarrera(compu);
-        jhoChi.setCarrera(mecatro);
-        floPe.setCarrera(telemat);
-        juBa.setCarrera(mecatro);
-
         Grupo g1 = new Grupo(1, "Grupo 1", 20);
         Grupo g2 = new Grupo(2, "Grupo 2", 18);
-
-        logic.setProfesor(gaLeo);
-        logic.setGrupo(g2);
-        calc1Var.setProfesor(anPla);
-        calc1Var.setGrupo(g1);
 
         HistorialCalificacionEstudiante caliMat1 = new HistorialCalificacionEstudiante(30, 20, 28, 18);
         caliMat1.setMateria(calc1Var);
@@ -78,29 +59,28 @@ public class Principal {
 
         HistorialCalificacionEstudiante caliMat4 = new HistorialCalificacionEstudiante(24, 14, 26, 17);
         caliMat4.setMateria(logic);
-
+        //Adición de objetos
+        sedeCuenca.addCarrera(compu);
+        sedeCuenca.addCarrera(telemat);
+        sedeCuenca.addCarrera(mecatro);
+        compu.addMateria(calculoDife);
+        compu.addMateria(algebraLin);
+        telemat.addMateria(etica);
+        telemat.addMateria(comunica);
+        mecatro.addMateria(calc1Var);
+        mecatro.addMateria(logic);
+        joRa.setCarrera(compu);
+        jhoChi.setCarrera(mecatro);
+        floPe.setCarrera(telemat);
+        juBa.setCarrera(mecatro);
+        logic.setProfesor(gaLeo);
+        logic.setGrupo(g2);
+        calc1Var.setProfesor(anPla);
+        calc1Var.setGrupo(g1);
         joRa.addCalificaciones(caliMat1);
         joRa.addCalificaciones(caliMat4);
-
+        //Impresión de datos
         System.out.println(joRa);
 
-        //crear 2 profes, 4 estudiantes, 2 grupos
-        /*Estudiante est = new Estudiante();
-        est.setNombre("Josze");
-        est.setCodigo(158);
-        est.setCedula("0706740610");
-        est.setDireccion("no me acuerdo de las calles");
-        est.setTelefono("0982432751");
-        est.setCorreo("jo.an.ra.k_@hotmail.com");
-        
-        Sede sed = new Sede();
-        sed.setNombre("Cuenca");
-        sed.setCodigo(542);
-        sed.setDireccion("Detras del parque");
-        sed.setTelefono("2983418");
-        
-        est.setSede(sed);
-        
-        System.out.println(est);*/
     }
 }
