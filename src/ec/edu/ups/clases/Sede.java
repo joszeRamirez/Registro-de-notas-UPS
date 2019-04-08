@@ -70,8 +70,9 @@ public class Sede {
 
     @Override
     public String toString() {
-        return "Sede{" + "codigo=" + codigo + "\n" + "\t\tnombre=" + nombre + "\n"
-                + "\t\tdireccion=" + direccion + "\n" + "\t\ttelefono=" + telefono;
+        return "Sede{" + "codigo=" + codigo + "\n" + "\t\tnombre=" + nombre 
+                + "\n" + "\t\tdireccion=" + direccion + "\n" + "\t\ttelefono="
+                + telefono;
     }
 
 }

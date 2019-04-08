@@ -1,5 +1,8 @@
 package ec.edu.ups.clases;
 
+import java.util.ArrayList;
+import java.util.List;
+
 /**
  * Estudiante
  *
@@ -14,6 +17,7 @@ public class Estudiante extends Persona {
 
     /*Carrera privado del objeto carrera*/
     private Carrera carrera;
+    private List<HistorialCalificacionEstudiante> calificaciones;
 
     /**
      * Constructor
@@ -27,11 +31,13 @@ public class Estudiante extends Persona {
 
     public Estudiante(int codigo, String direccion, String telefono) {
         super(codigo, telefono, telefono);
+        
     }
 
     public Estudiante(int codigo, String nombre, String cedula,
             String telefono, String direccion, String correo) {
         super(codigo, nombre, cedula, telefono, direccion, correo);
+        calificaciones = new ArrayList<>();
     }
 
     /**
@@ -52,10 +58,13 @@ public class Estudiante extends Persona {
         this.carrera = carrera;
     }
 
+    public void addCalificaciones(HistorialCalificacionEstudiante calificacion){
+        calificaciones.add(calificacion);
+    }
     @Override
     public String toString() {
         return "Estudiante{" + super.toString() + "\n" + "\tcarrera="
-                + carrera;
+                + carrera + "\n" + "\tcalificaciones=" + calificaciones;
     }
 
 }

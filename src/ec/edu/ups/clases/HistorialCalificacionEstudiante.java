@@ -16,15 +16,6 @@ public class HistorialCalificacionEstudiante {
     private int aprovecha2;
     private int examen2;
     private Materia materia;
-    private Estudiante estudiante;
-
-    public Estudiante getEstudiante() {
-        return estudiante;
-    }
-
-    public void setEstudiante(Estudiante estudiante) {
-        this.estudiante = estudiante;
-    }
 
     public HistorialCalificacionEstudiante() {
     }
@@ -79,10 +70,10 @@ public class HistorialCalificacionEstudiante {
 
     @Override
     public String toString() {
-        return "HistorialCalificacionEstudiante{" + "\n" + "estudiante="
-                + estudiante + "\n" + "\taprovecha1=" + aprovecha1 + "\n" + "\texamen1="
-                + examen1 + "\n" + "\taprovecha2=" + aprovecha2 + "\n" 
-                + "\texamen2=" + examen2 + "\n" + "\tmateria=" + materia;
+        return "\nHistorialCalificacionEstudiante{" + "\n" + "\tmateria=" 
+                + materia + "\n" + "\taprovecha1=" + aprovecha1 + "\n"
+                + "\texamen1=" + examen1 + "\n" + "\taprovecha2=" + aprovecha2
+                + "\n" + "\texamen2=" + examen2;
     }
 
 }
